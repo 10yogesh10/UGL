@@ -1,6 +1,7 @@
 // 1. Automatically track visitor IP when the page loads
+// 1. Automatically track visitor IP when the page loads
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('/api/track-ip', {
+  fetch('https://ugl-backend.onrender.com/api/track-ip', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' }
   })
