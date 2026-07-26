@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGL - Ulhasnagar's Got Latent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Form Container -->
+        <form id="latentForm" class="form-wrapper">
+            
+            <!-- Header Banner Card -->
+            <div class="card header-card">
+                <div class="banner-img"></div>
+                <div class="card-content">
+                    <h1>Latent Registration</h1>
+                    <p class="description-text">
+                        Ulhasnagar, are you ready for absolute chaos?! 🎙️✨<br><br>
+                        <strong>Ulhasnagar's Got Latent</strong> is here to find the most iconic, wild, and mind-blowing talent in the city. No boring auditions, just pure energy, zero filter, and legendary vibes with our star-studded panel: <strong>Ashish Chanchlani, Ranveer Singh, Tamannaah Bhatia, Vishal Dadlani & Yogesh Talreja!</strong><br><br>
+                        Show up, perform, and claim your crown. Register Karo Jaldi! 🚀
+                    </p>
+                    
+                    <div class="eve-details">
+                        <p><strong>Event Date:</strong> 10th October 2026</p>
+                        <p><strong>Timing:</strong> 3:30 pm - 10:30 pm</p>
+                        <p><strong>Venue:</strong> ABCD Hall Near XYZ Tower, Ulhasnagar</p>
+                    </div>
+
+                    <div class="account-info">
+                        <span>yourname@gmail.com</span> 
+                        <a href="#">Switch account</a>
+                    </div>
+                    
+                    <div class="alert">
+                        The name, email address, and photo associated with your Google Account will be recorded when you upload files and submit this form.
+                    </div>
+                    
+                    <p class="required">* Indicates required question</p>
+                </div>
+            </div>
+
+            <!-- Question Cards -->
+            <div class="card">
+                <label for="email" class="question-title">Email <span class="required">*</span></label>
+                <input type="email" id="email" class="text-input" placeholder="Enter your email address">
+                <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="card">
+                <label for="name" class="question-title">Your name <span class="required">*</span></label>
+                <input type="text" id="name" class="text-input" placeholder="Enter your name">
+                <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <div class="card">
+                <label for="state" class="question-title">Your State <span class="required">*</span></label>
+                <input type="text" id="state" class="text-input" placeholder="Enter your State">
+            </div>
+
+            <div class="card">
+                <label for="district" class="question-title">Your District <span class="required">*</span></label>
+                <input type="text" id="district" class="text-input" placeholder="Enter your district">
+            </div>
+
+            <div class="card">
+                <label for="city" class="question-title">Your City/Taluka <span class="required">*</span></label>
+                <input type="text" id="city" class="text-input" placeholder="Enter your City">
+            </div>
+
+            <div class="card">
+                <label for="instahandle" class="question-title">Your Instagram Handle <span class="required">*</span></label>
+                <input type="text" id="instahandle" class="text-input" placeholder="Enter your Instahandle">
+            </div>
+
+            <div class="card">
+                <label for="mobno" class="question-title">Your Mobile number <span class="required">*</span></label>
+                <input type="tel" id="mobno" class="text-input" placeholder="Enter your Mobile No">
+                <span class="error-msg" id="mobError"></span>
+            </div>
+
+            <div class="card">
+                <label for="tickets" class="question-title">How many tickets do you want <span class="required">*</span></label>
+                <input type="number" id="tickets" class="text-input" placeholder="Enter no of tickets here">
+            </div>
+
+            <div class="card">
+                <p class="question-title">I consent to photos/videos from the event being used on social media and promotional content <span class="required">*</span></p>
+                <div class="radio-option">
+                    <input type="radio" id="consent" name="media_consent">
+                    <label for="consent">I agree</label>
+                </div>
+                <span class="error-msg" id="consentError"></span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="button" id="clearBtn" class="btn btn-clear">Clear form</button>
+            </div>
+
+        </form>
+
+        <!-- Hidden Success Message Card (Shown via JS after valid submission) -->
+        <div id="successCard" class="form-wrapper hidden">
+            <div class="card">
+                <h1>Registration Successful! 🎉</h1>
+                <p class="description-text">Your response for <strong>Ulhasnagar's Got Latent</strong> has been recorded.</p>
+                <p>See you at the event on 10th October 2026! 🔥</p>
+                <br>
+                <a href="#" id="reloadBtn">Submit another response</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0ebf8; /* Soft Google Form background color */
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Base Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  padding: 24px;
+}
+
+/* Header Card Specifics */
+.header-card {
+  padding: 0;
+  overflow: hidden;
+  border-top: 8px solid #673ab7; /* Accent top line */
+}
+
+.banner-img {
+  width: 100%;
+  height: 160px;
+  background-image: url("./UGL.png"); /* Ensures banner image fits nicely */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #202124;
+}
+
+.description-text {
+  font-size: 14px;
+  color: #3c4043;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.eve-details {
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.account-info {
+  font-size: 13px;
+  color: #5f6368;
+  margin-bottom: 8px;
+}
+
+.account-info a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.alert {
+  font-size: 12px;
+  color: #70757a;
+  margin-bottom: 16px;
+}
+
+.required {
+  color: #d93025;
+  font-size: 13px;
+}
+
+/* Input Fields & Question Styling */
+.question-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 16px;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 360px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.text-input:focus {
+  border-bottom: 2px solid #673ab7;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Form Action Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #512da8;
+}
+
+.btn-clear {
+  background: transparent;
+  color: #673ab7;
+}
+
+/* JS Version 2 Helper Styles */
+.error-msg {
+  color: #d93025;
+  font-size: 12px;
+  display: block;
+  margin-top: 6px;
+}
+
+.input-error {
+  border-bottom: 2px solid #d93025 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#successCard a {
+  color: #1a73e8;
+  font-size: 14px;
+}
